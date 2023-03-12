@@ -1,0 +1,127 @@
+.delivery {
+  padding-bottom: 60px;
+  display: block;
+}
+
+.delivery-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.22;
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.delivery-title::after {
+  content: '';
+  display: inline-block;
+  width: 148px;
+  border: 1px solid #000000;
+}
+
+.delivery-list {
+  margin-bottom: 32px;
+}
+
+.delivery-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.delivery-item-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  padding: 8px 14px 8px 14px;
+}
+
+.delivery-item-custom {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  margin-left: 8px;
+  padding-right: 8px;
+}
+
+.img-delivery {
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    min-width: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .delivery {
+    padding-bottom: 100px;
+  }
+
+  .delivery-title {
+    font-size: 44px;
+    margin-bottom: 60px;
+  }
+
+  .delivery-title::after {
+    width: 473px;
+  }
+
+  .delivery-list {
+    margin-bottom: 40px;
+  }
+
+  .delivery-item-number {
+    font-size: 26px;
+    width: 64px;
+    height: 64px;
+    padding: 16px 24px 16px 24px;
+  }
+
+  .delivery-item-custom {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+  }
+
+  .delivery-title::after {
+    width: 985px;
+  }
+
+  .delivery-item-number {
+    margin-left: 72px;
+    width: 64px;
+    height: 64px;
+    padding: 16px 24px 16px 24px;
+  }
+
+  .delivery-item-custom {
+    font-size: 32px;
+    margin-left: 52px;
+    padding-right: 185px;
+  }
+}
