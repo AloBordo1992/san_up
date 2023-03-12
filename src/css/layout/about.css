@@ -1,0 +1,13 @@
+.container {
+}
+.about-title {
+    margin-bottom: 32px;
+}
+.about-text {
+    margin-bottom: 16px;
+    font-size: 16px;
+line-height: 1.25;
+}
+.about-img{
+    margin-bottom: 60px;
+}
