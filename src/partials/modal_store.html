@@ -1,0 +1,84 @@
+<div class="store-backdrop">
+  <div class="store-modal-contact">
+    <button class="store-modal-btn-close btn" type="button"></button>
+    <strong class="store-modal-title">Contact us</strong>
+    <p class="store-modal-desc">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+    <form class="store-modal-form" name="store_modal_form">
+      <!-- Name Field -->
+      <label class="store-modal-form-label" for="store_username"
+        >Username</label
+      >
+      <div class="store-modal-form-group">
+        <input
+          class="store-modal-form-field"
+          type="text"
+          name="store_username"
+          id="store_username"
+          placeholder="Your name"
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </div>
+      <!-- Email Field -->
+      <label class="store-modal-form-label" for="store_email">Email</label>
+      <div class="store-modal-form-group">
+        <input
+          class="store-modal-form-field"
+          type="email"
+          name="store_email"
+          id="store_email"
+          placeholder="Your email"
+          required
+        />
+      </div>
+      <button class="store-modal-form-btn btn" type="submit" disabled>
+        Send
+      </button>
+    </form>
+  </div>
+
+  <script>
+    let input = document.querySelector('.store-modal-form-field');
+    let button = document.querySelector('.store-modal-form-btn');
+
+    button.disabled = true; //setting button state to disabled
+
+    input.addEventListener('change', stateHandle);
+
+    function stateHandle() {
+      if (document.querySelector('.store-modal-form-field').value === '') {
+        button.disabled = true; //button remains disabled
+      } else {
+        button.disabled = false; //button is enabled
+      }
+    }
+  </script>
+
+  <div class="store-modal-thank">
+    <button class="store-modal-btn-close btn" type="button"></button>
+    <strong class="store-modal-title">Thank you!</strong>
+    <img
+      class="store-modal-img"
+      src="./img/modal_store.img/modal_store_flowers.png"
+      srcset="
+        ./img/modal_store.img/modal_store_flowers_188.png 188w,
+        ./img/modal_store.img/modal_store_flowers_266.png 266w,
+        ./img/modal_store.img/modal_store_flowers_376.png 376w,
+        ./img/modal_store.img/modal_store_flowers_532.png 532w
+      "
+      sizes="(min-width: 1280px) 266px, (min-width: 768px) 266px, (min-width: 480px) 188px, 100vw"
+      alt="Flowers"
+      width="188"
+      height="142"
+    />
+    <p class="store-modal-desc">
+      We have received your contact details and will reach you soon.
+    </p>
+    <button class="store-modal-btn btn" type="submit">Continue</button>
+  </div>
+</div>
