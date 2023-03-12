@@ -13,7 +13,6 @@ h1,h2,h3,h4,h5,h6,p{
 img{
     display: block;
     max-width: 100%;
-    height: auto;
 }
 
 
@@ -39,7 +38,6 @@ margin-bottom: 32px;
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
-    max-width: 288px;
 }
 .store-iteam {
     width: calc((100% - 16px) / 2);
@@ -62,4 +60,45 @@ opacity: 0.6;
 .store-btn{
     margin-top: 32px;
     margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px){
+    .store-title{
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 1.2;
+    }
+    .store-label{
+        font-weight: 500;
+font-size: 32px;
+line-height: 1.2;
+    }
+    .store-price{
+        font-weight: 600;
+font-size: 24px;
+line-height: 1.2;
+    }
+    .store-iteam {
+        width: calc((100% - 32px) / 2);
+    }
+    .store-list {
+        gap: 32px;
+        row-gap: 40px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .store-label{
+font-size: 36px;
+line-height: 1.2;
+    }
+    .store-price{
+font-size: 28px;
+line-height: 1.2;
+    }
+    .store-iteam {
+        width: calc((100% - 32px) / 2);
+    }
+    .store-list {
+        row-gap: 64px;
+    }
 }

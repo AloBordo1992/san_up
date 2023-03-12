@@ -1,7 +1,17 @@
 <section class="about">
     <div class="container">
-        <h2 class="about-title title">ABOUT</h2>
-        <p class="about-text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
-        <img src="" alt="flower" class="about-img">
+            <h2 class="about-title title">ABOUT</h2>
+            <div class="about-desk">
+            <p class="about-text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
+            <img srcset="
+            ./img/about/mob/image_aboutmob_288.jpg 288w,
+            ./img/about/mob/image_aboutmob_576.jpg 576w,
+            ./img/about/tab/image_abouttab_344.jpg 344w,
+            ./img/about/tab/image_abouttab_688.jpg 688w,
+            ./img/about/desk/image_aboutdesk_632.jpg 632w,
+            ./img/about/desk/image_aboutdesk_1264.jpg 1264w"
+            sizes="(min-width: 1200px) 632px, (min-width: 768px) 344px, (min-width: 480px) 288px, 100vw"
+            src="./img/about/mob/image_aboutmob_288.jpg" alt="flower" class="about-img" width="632">
+        </div>
     </div>
 </section>
