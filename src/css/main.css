@@ -15,6 +15,7 @@
 /* components */
 @import url('./components/container.css');
 @import url('./components/buttons.css');
+@import url('./components/style-line.css');
 
 /* layout */
 @import url('./layout/header.css');
@@ -26,5 +27,3 @@
 @import url('./layout/footer.css');
 @import url('./layout/modal_store.css');
 @import url('./layout/modal_blog.css');
-
-
