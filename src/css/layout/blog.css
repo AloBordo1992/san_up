@@ -1,34 +1,22 @@
-.container {
-  min-width: 320px;
-  padding-right: 16px;
-  padding-left: 16px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .blog {
-  padding-bottom: 60px;
   display: block;
 }
 
 .blog-title {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-style: normal;
+  /* font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2;
-  color: #000000;
+  color: #000000; */
   margin-bottom: 32px;
 }
 
-.blog-title::after {
+/* .blog-title::after {
   content: '';
   display: inline-block;
   width: 202px;
   border: 1px solid #000000;
-}
+} */
 
 .img-blog-wrap {
   display: flex;
@@ -50,7 +38,7 @@
   margin-bottom: 32px;
 }
 
-.btn-follow {
+/* .btn-follow {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -78,36 +66,25 @@
 
 .btn-follow:hover {
   background: #e25b41;
-}
+} */
 
-@media screen and (min-width: 480px) {
-  .container {
-    min-width: 320px;
-    padding-right: 16px;
-    padding-left: 16px;
-  }
-}
+/* @media screen and (min-width: 480px) {
+} */
 
 @media screen and (min-width: 768px) {
-  .container {
-    min-width: 768px;
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-
   .blog {
     padding-bottom: 100px;
   }
 
   .blog-title {
-    font-size: 44px;
-    line-height: 1.22;
+    /* font-size: 44px;
+    line-height: 1.22; */
     margin-bottom: 60px;
   }
 
-  .blog-title::after {
+  /* .blog-title::after {
     width: 573px;
-  }
+  } */
 
   .img-blog-wrap {
     gap: 32px;
@@ -120,7 +97,7 @@
     margin-bottom: 32px;
   }
 
-  .btn-follow {
+  /* .btn-follow {
     padding: 20px 69px;
     width: 280px;
     height: 64px;
@@ -136,26 +113,20 @@
 
   .btn-follow:hover {
     background: #e25b41;
-  }
+  } */
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    min-width: 1280px;
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-
   .blog-title {
-    font-weight: 700;
+    /* font-weight: 700;
     font-size: 44px;
-    line-height: 1.22px;
+    line-height: 1.22px; */
     margin-bottom: 122px;
   }
 
-  .blog-title::after {
+  /* .blog-title::after {
     width: 1085px;
-  }
+  } */
 
   .img-blog-wrap {
     gap: 31px;
