@@ -6,9 +6,15 @@
 
 @media screen and (min-width: 480px) {
   .container {
-    /* max-width: none; */
     min-width: 320px;
     padding: 0 16px 60px;
+
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+    outline: 2px solid red;
+    outline-offset: -2px;
+
   }
 }
 

@@ -15,6 +15,15 @@
 
 .img-blog-3 {
   display: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 32px;
 }
 
 .blog-follow {
@@ -25,6 +34,7 @@
   color: #000000;
   margin-bottom: 32px;
 }
+
 
 @media screen and (min-width: 768px) {
   .blog-title {
@@ -44,7 +54,12 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .img-blog-wrap {
+
+  .blog-title {
+     margin-bottom: 122px;
+  }
+
+.img-blog-wrap {
     gap: 31px;
     margin-bottom: 45px;
   }
@@ -59,3 +74,4 @@
     margin-bottom: 32px;
   }
 }
+

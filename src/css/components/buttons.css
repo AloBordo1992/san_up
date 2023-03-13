@@ -1,0 +1,46 @@
+.stail_btn{
+  border: none;
+  font-family: "Montserrat";
+  background: var(--color-hover);
+  font-weight: 500;
+  font-size:18px;
+  line-height: calc(24/18);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px auto;
+ 
+  width: 170px;
+  height: 40px;
+  background: var(--color-hover);
+  border-radius: 38px;
+ 
+}
+.stail_btn:hover,
+.stail_btn:focus {
+    background-color: var(--color-focus);
+    
+}
+@media screen and (min-width: 480px) {
+  .stail_btn {
+    font-size: 28px;
+    line-height: calc(28/24);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .stail_btn {
+    width: 280px;
+    height: 64px;
+    font-size: 28px;
+    line-height: calc(28/24);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .stail_btn {
+   
+  }
+}
