@@ -1,0 +1,155 @@
+/* mobile header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding-top: 16px;
+}
+
+.header-bg {
+    background-image: linear-gradient(0deg, #b5b6b2a9, #f7f1d1bc);
+}
+
+.header-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-tel {
+    margin-left: auto;
+}
+
+.header-nav {
+    display: none;
+}
+
+.menu-burger {
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+}
+
+/* mobile hero */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+}
+
+.hero-image {
+    display: flex;
+
+    padding-top: 95px;
+    padding-bottom: 36px;
+    margin-left: 14px;
+}
+
+
+.hero-row {}
+
+.hero-title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: calc(63 / 52);
+    width: 100%;
+    margin-top: auto;
+
+}
+
+
+
+.hero-btn {
+    display: flex;
+    margin-left: 2px;
+    padding-bottom: 124px;
+    border: none;
+    background-color: transparent;
+}
+
+.hero-subtitle {
+    display: flex;
+    padding-bottom: 146px;
+    font-weight: 400;
+    padding-left: 11px;
+    width: 46px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+}
+
+/* menu window */
+.menu {
+    padding: 40px;
+    position: relative;
+    background-color: #fffdc0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu.is-open {
+    transform: translateX(0);
+}
+
+.menu__button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    cursor: pointer;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.menu__icon {
+    width: 40px;
+    height: 40px;
+    fill: black;
+}
+
+.menu__button:focus,
+.menu__button:active {
+    fill: #7eb101;
+}
+
+
+.menu-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu__nav-item {}
+
+.menu-nav-link {
+    display: block;
+    padding: 30px 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: #2c2c2c;
+}
