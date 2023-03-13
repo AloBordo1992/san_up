@@ -5,7 +5,7 @@
 .blog-title {
   margin-bottom: 32px;
 }
- 
+
 .img-blog-wrap {
   display: flex;
   justify-content: space-between;
@@ -37,11 +37,11 @@
 
 
 @media screen and (min-width: 768px) {
-   .blog-title {
-     margin-bottom: 60px;
+  .blog-title {
+    margin-bottom: 60px;
   }
 
-   .img-blog-wrap {
+  .img-blog-wrap {
     gap: 32px;
     margin-bottom: 35px;
   }
@@ -54,6 +54,7 @@
 }
 
 @media screen and (min-width: 1280px) {
+
   .blog-title {
      margin-bottom: 122px;
   }
