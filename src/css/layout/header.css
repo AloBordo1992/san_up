@@ -34,10 +34,6 @@
     margin-left: 8px;
 }
 
-/* .menu {
-    display: none;
-} */
-
 /* mobile hero */
 .hero-container {
     display: flex;
@@ -157,10 +153,3 @@
     text-transform: uppercase;
     color: #2c2c2c;
 }
-
-/* :hover,
-    :focus {
-        color: #25291e;
-        text-shadow: rgb(10, 17, 8) 2px 0px 15px;
-    }
-} */
