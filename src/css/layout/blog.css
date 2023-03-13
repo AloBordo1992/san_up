@@ -5,7 +5,7 @@
 .blog-title {
   margin-bottom: 32px;
 }
- 
+
 .img-blog-wrap {
   display: flex;
   justify-content: space-between;
@@ -15,15 +15,6 @@
 
 .img-blog-3 {
   display: none;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.2;
-  color: #000000;
-  margin-bottom: 32px;
 }
 
 .blog-follow {
@@ -35,13 +26,17 @@
   margin-bottom: 32px;
 }
 
+.pos-btn {
+  margin-right: 59px;
+  margin-left: 59px;
+}
 
 @media screen and (min-width: 768px) {
-   .blog-title {
-     margin-bottom: 60px;
+  .blog-title {
+    margin-bottom: 60px;
   }
 
-   .img-blog-wrap {
+  .img-blog-wrap {
     gap: 32px;
     margin-bottom: 35px;
   }
@@ -51,14 +46,19 @@
     line-height: 1.21;
     margin-bottom: 32px;
   }
+
+  .pos-btn {
+    margin-right: 220px;
+    margin-left: 220px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .blog-title {
-     margin-bottom: 122px;
+    margin-bottom: 122px;
   }
 
-.img-blog-wrap {
+  .img-blog-wrap {
     gap: 31px;
     margin-bottom: 45px;
   }
@@ -72,5 +72,9 @@
     line-height: 1.21;
     margin-bottom: 32px;
   }
-}
 
+  .pos-btn {
+    margin-right: 476px;
+    margin-left: 476px;
+  }
+}

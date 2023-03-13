@@ -1,24 +1,35 @@
-.stail_btn{
+.stail_btn {
   border: none;
-  font-family: "Montserrat";
-  background: var(--color-hover);
+  font-family: 'Montserrat';
+  background-color: #e86f54;
   font-weight: 500;
-  font-size: 28px;
-  line-height: calc(28 /24);
+  font-size: 18px;
+  line-height: calc(24 / 18);
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 20px auto;
- 
-  width: 280px;
-  height: 64px;
-  background: var(--color-hover);
+
+  color: #ffffff;
+  width: 170px;
+  height: 40px;
   border-radius: 38px;
- 
 }
-.stail_btn:hover,
+
+.stail_btn:hover {
+  background-color: #e25b41;
+}
 .stail_btn:focus {
-    background-color: var(--color-focus);
+  background-color: var(--color-focus);
+}
+
+@media screen and (min-width: 768px) {
+  .stail_btn {
+    font-size: 28px;
+    line-height: calc(24 / 28);
+    width: 280px;
+    height: 64px;
+  }
 }
