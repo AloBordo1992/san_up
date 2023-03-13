@@ -1,0 +1,44 @@
+.footer {
+    background-color: #000000;
+}
+.container {
+}
+.footer-container {
+}
+.footer-title {
+    padding-top: 32px;
+    padding-bottom: 18px;
+    color: #ffffff;
+}
+.footer-navigation {
+    padding-bottom: 12px;
+    color: #ffffff;
+}
+.footer-contact {
+    color: #ffffff;
+}
+.footer-str{
+    color: #ffffff;
+}
+.contacts-address {
+}
+.contacts-list {
+}
+
+.contact-items {
+    color: #ffffff;
+}
+.contact-link {
+}
+.link {
+}
+.footer-icon {
+    fill: #ffffff;
+}
+
+
+@media screen and (min-width: 480px) {
+    .container {
+        min-width: 320px;
+    }
+}
