@@ -1,6 +1,10 @@
-<div class="store-backdrop">
+<div class="store-backdrop is-hidden" data-store-modal>
   <div class="store-modal-contact">
-    <button class="store-modal-btn-close btn" type="button"></button>
+    <button
+      class="store-modal-btn-close btn"
+      type="button"
+      data-store-modal-close
+    ></button>
     <strong class="store-modal-title">Contact us</strong>
     <p class="store-modal-desc">
       If you have any additional questions or you want to clarify something
@@ -9,9 +13,7 @@
     </p>
     <form class="store-modal-form" name="store_modal_form">
       <!-- Name Field -->
-      <label class="store-modal-form-label" for="store_username"
-        >Username</label
-      >
+      <label class="store-modal-form-label" for="store_username">Name</label>
       <div class="store-modal-form-group">
         <input
           class="store-modal-form-field"
@@ -36,7 +38,12 @@
           required
         />
       </div>
-      <button class="store-modal-form-btn btn" type="submit" disabled>
+      <button
+        class="store-modal-form-btn btn"
+        type="submit"
+        disabled
+        data-store-modal-thank-open
+      >
         Send
       </button>
     </form>
@@ -46,22 +53,29 @@
     let input = document.querySelector('.store-modal-form-field');
     let button = document.querySelector('.store-modal-form-btn');
 
-    button.disabled = true; //setting button state to disabled
+    button.disabled = true;
 
     input.addEventListener('change', stateHandle);
 
     function stateHandle() {
       if (document.querySelector('.store-modal-form-field').value === '') {
-        button.disabled = true; //button remains disabled
+        button.disabled = true;
       } else {
-        button.disabled = false; //button is enabled
+        button.disabled = false;
       }
     }
   </script>
+</div>
 
+<!-- Store thank modal -->
+
+<div class="store-thank-backdrop is-hidden" data-store-modal-thank>
   <div class="store-modal-thank">
-    <button class="store-modal-btn-close btn" type="button"></button>
-    <strong class="store-modal-title">Thank you!</strong>
+    <button
+      class="store-modal-btn-close btn"
+      type="button"
+      data-store-modal-thank-close
+    ></button>
     <img
       class="store-modal-img"
       src="./img/modal_store.img/modal_store_flowers.png"
@@ -76,9 +90,17 @@
       width="188"
       height="142"
     />
-    <p class="store-modal-desc">
+    <strong class="store-modal-thank-title">Thank you!</strong>
+    <p class="store-modal-thank-desc">
       We have received your contact details and will reach you soon.
     </p>
-    <button class="store-modal-btn btn" type="submit">Continue</button>
+    <button
+      class="store-modal-thank-btn btn"
+      type="submit"
+      data-store-modal-thank-close
+    >
+      Continue
+    </button>
   </div>
 </div>
+<script src="./js/modal.js"></script>
