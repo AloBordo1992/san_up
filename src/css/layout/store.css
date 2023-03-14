@@ -19,7 +19,10 @@ font-size: 16px;
 line-height: 1.25;
 margin-top: 12px;
 margin-bottom: 6px;
+display: flex;
+align-items: center;
 }
+
 .store-price {
     font-weight: 600;
 font-size: 12px;
@@ -41,6 +44,13 @@ opacity: 0.6;
 font-size: 32px;
 line-height: 1.2;
     }
+    .store-label::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        border: 1px solid #000000;
+        margin-left: 14px;
+    }
     .store-price{
         font-weight: 600;
 font-size: 24px;
@@ -58,6 +68,7 @@ line-height: 1.2;
     }
 }
 @media screen and (min-width: 1200px){
+    
     .store-label{
 font-size: 36px;
 line-height: 1.2;
@@ -65,9 +76,6 @@ line-height: 1.2;
     .store-price{
 font-size: 28px;
 line-height: 1.2;
-    }
-    .store-iteam {
-        width: calc((100% - 32px) / 2);
     }
     .store-list {
         row-gap: 64px;
