@@ -11,14 +11,6 @@ margin-bottom: 32px;
 display: flex;
 align-items: center;
 }
-.section-title::after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    border: 1px solid #000000;
-    margin-left: 14px;
-    height: 0;
-}
 .store-list {
     display: flex;
     flex-wrap: wrap;
