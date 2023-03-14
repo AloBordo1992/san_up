@@ -1,6 +1,4 @@
-.container {
-    max-width: 480px;
-}
+
 .about-title {
     margin-bottom: 32px;
     display: flex;
@@ -11,17 +9,10 @@
     font-size: 16px;
 line-height: 1.25;
 }
-.about-desk{
-    margin-bottom: 60px;
-}
 
 @media screen and (min-width: 768px) {
-    .container{
-        max-width: 720px;
-    }
     .about-desk{
         display: flex;
-        margin-bottom: 100px;
     }
     .about-text{
         max-width: 322px;
@@ -30,16 +21,9 @@ line-height: 1.25;
 font-size: 20px;
 line-height: 1.2;
     }
-    .about-title {
-        font-size: 44px;
-line-height: 1.2;
-    }
 }
 
 @media screen and (min-width: 1200px) {
-    .container{
-        max-width: 1232px;
-    }
     .about-text{
         max-width: 510px;
         margin-right: 90px;
@@ -47,8 +31,6 @@ font-size: 22px;
 line-height: 1.2;
     }
     .about-title {
-        font-size: 44px;
-line-height: 1.2;
 margin-bottom: 26px;
     }
     .about-desk{
