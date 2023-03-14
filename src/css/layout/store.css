@@ -29,8 +29,7 @@ opacity: 0.6;
 }
 
 .store-btn{
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin: 32px auto 0 ;
 }
 
 @media screen and (min-width: 768px){
@@ -53,6 +52,9 @@ line-height: 1.2;
     .store-list {
         gap: 32px;
         row-gap: 40px;
+    }
+    .store-btn{
+        margin: 60px auto 0 ;
     }
 }
 @media screen and (min-width: 1200px){
