@@ -74,6 +74,28 @@
 }
 
 @media screen and (min-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+    /* .footer-container{
+        width: 768px;
+        height: 268px;
+    } */
+    .footer-set{
+        padding-top: 60px;
+        padding-right: 44px;
+    }
+    .footer-set1{
+        padding-top: 60px;
+        padding-right: 44px;
+    }
+    .footer-set2{
+        padding-top: 60px;
+        padding-right: 44px;
+    }
+    .footer-set3{
+        padding-top: 60px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
