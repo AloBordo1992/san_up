@@ -7,7 +7,7 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/san_up/assets/index-7301d79b.js"></script>
-    <link rel="stylesheet" href="/san_up/assets/index-cefd9ab0.css">
+    <link rel="stylesheet" href="/san_up/assets/index-8413dd07.css">
   </head>
   <body>
     <header class="header header-js">
@@ -199,11 +199,7 @@
     </div>
 
     <p class="blog-follow">Follow to our newsletter</p>
-    <button
-      type="button"
-      class="stail_btn pos-btn js-open-modal"
-      data-modal="3"
-    >
+    <button type="button" class="btn-follow js-open-modal" data-modal="3">
       Subscribe
     </button>
   </div>
@@ -211,7 +207,47 @@
 
     </main>
     
-    
+    <div class="backdrop js-backdrop-modal" data-modal>
+  <div class="modal modal3" data-modal="3">
+    <button class="modal-btn js-modal-close" type="button" data-modal-close>
+      <!-- <svg class="modal-icon">
+        <use href="../img/icon.svg#icon-close"></use>
+      </svg> -->
+      <svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 1024 1024"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="#000000"
+          d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"
+        />
+      </svg>
+    </button>
+    <div class="modal-cont">
+      <h2 class="title-mod">Follow to our newsletter</h2>
+      <p class="text-mod">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in your box.
+      </p>
+      <form class="modal-form">
+        <label class="modal-form-label" for="user_email">Email</label>
+
+        <input
+          class="modal-form-input"
+          type="email"
+          id="user_email"
+          placeholder="Your email"
+          required
+        />
+
+        <button class="contact-form-btn btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</div>
+
     <div class="store-backdrop">
   <div class="store-modal-contact">
     <button class="store-modal-btn-close btn" type="button"></button>
