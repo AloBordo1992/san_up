@@ -1,9 +1,10 @@
 .container {
+    max-width: 480px;
 }
 .about-title {
     margin-bottom: 32px;
-    font-size: 24px;
-line-height: 1.2;
+    display: flex;
+    align-items: center;
 }
 .about-text {
     margin-bottom: 16px;
