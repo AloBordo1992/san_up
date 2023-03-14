@@ -27,8 +27,8 @@
 }
 
 .pos-btn {
-  margin-right: 59px;
-  margin-left: 59px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -46,15 +46,9 @@
     line-height: 1.21;
     margin-bottom: 32px;
   }
-
-  .pos-btn {
-    margin-right: 220px;
-    margin-left: 220px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
-
   .blog-title {
     margin-bottom: 122px;
   }
@@ -72,10 +66,5 @@
     font-size: 32px;
     line-height: 1.21;
     margin-bottom: 32px;
-  }
-
-  .pos-btn {
-    margin-right: 476px;
-    margin-left: 476px;
   }
 }
