@@ -1,123 +1,113 @@
-<!-- <div class="store-backdrop is-hidden" data-store-modal> -->
-  <div class="store-modal-contact modal" data-modal="4">
-    <button
-      class="store-modal-btn-close btn js-modal-close"
-      type="button"
-    ><svg
-        width="24px"
-        height="24px"
-        viewBox="0 0 1024 1024"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill="#000000"
-          d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"
-        />
-      </svg></button>
-    <strong class="store-modal-title">Contact us</strong>
-    <p class="store-modal-desc">
-      If you have any additional questions or you want to clarify something
-      before you make an order please fill in your contact details. We will call
-      you back.
-    </p>
-    <form class="store-modal-form" name="store_modal_form">
-      <!-- Name Field -->
-      <label class="store-modal-form-label" for="store_username">Name</label>
-      <div class="store-modal-form-group">
-        <input
-          class="store-modal-form-field"
-          type="text"
-          name="store_username"
-          id="store_username"
-          placeholder="Your name"
-          required
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="Username must be two words separated by space."
-        />
-      </div>
-      <!-- Email Field -->
-      <label class="store-modal-form-label" for="store_email">Email</label>
-      <div class="store-modal-form-group">
-        <input
-          class="store-modal-form-field"
-          type="email"
-          name="store_email"
-          id="store_email"
-          placeholder="Your email"
-          required
-        />
-      </div>
-      <button
-        class="store-modal-form-btn btn js-modal-open js-modal-close" data-modal="5"
-        type="submit"
-        disabled
-      >
-        Send
-      </button>
-    </form>
-  </div>
-
-  <!-- Store thank modal -->
-
-  <!-- <div class="store-thank-backdrop is-hidden" data-store-modal-thank> -->
-    <div class="store-modal-thank modal" data-modal="5">
-      <button
-        class="store-modal-btn-close btn js-modal-close"
-        type="button"
-      ><svg
-        width="24px"
-        height="24px"
-        viewBox="0 0 1024 1024"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill="#000000"
-          d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"
-        />
-      </svg></button>
-      <img
-        class="store-modal-img"
-        src="./img/modal_store.img/modal_store_flowers.png"
-        srcset="
-          ./img/modal_store.img/modal_store_flowers_188.png 188w,
-          ./img/modal_store.img/modal_store_flowers_266.png 266w,
-          ./img/modal_store.img/modal_store_flowers_376.png 376w,
-          ./img/modal_store.img/modal_store_flowers_532.png 532w
-        "
-        sizes="(min-width: 1280px) 266px, (min-width: 768px) 266px, (min-width: 480px) 188px, 100vw"
-        alt="Flowers"
-        width="188"
-        height="142"
+<div class="store-modal-contact modal" data-modal="4">
+  <button class="store-modal-btn-close btn js-modal-close" type="button">
+    <svg
+      width="24px"
+      height="24px"
+      viewBox="0 0 1024 1024"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="#000000"
+        d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"
       />
-      <strong class="store-modal-thank-title">Thank you!</strong>
-      <p class="store-modal-thank-desc">
-        We have received your contact details and will reach you soon.
-      </p>
-      <button
-        class="store-modal-thank-btn btn js-modal-close"
-        type="submit"
-      >
-        Continue
-      </button>
+    </svg>
+  </button>
+  <strong class="store-modal-title">Contact us</strong>
+  <p class="store-modal-desc">
+    If you have any additional questions or you want to clarify something before
+    you make an order please fill in your contact details. We will call you
+    back.
+  </p>
+  <form class="store-modal-form" name="store_modal_form">
+    <!-- Name Field -->
+    <label class="store-modal-form-label" for="store_username">Name</label>
+    <div class="store-modal-form-group">
+      <input
+        class="store-modal-form-field"
+        type="text"
+        name="store_username"
+        id="store_username"
+        placeholder="Your name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+      />
     </div>
-  </div>
-  <!-- <script src="./js/modal.js"></script> -->
+    <!-- Email Field -->
+    <label class="store-modal-form-label" for="store_email">Email</label>
+    <div class="store-modal-form-group">
+      <input
+        class="store-modal-form-field"
+        type="email"
+        name="store_email"
+        id="store_email"
+        placeholder="Your email"
+        required
+      />
+    </div>
+    <button
+      class="store-modal-form-btn btn js-modal-open js-modal-close"
+      data-modal="5"
+      type="submit"
+      disabled
+    >
+      Send
+    </button>
+  </form>
+</div>
 
-  <script>
-    let input = document.querySelector('.store-modal-form-field');
-    let button = document.querySelector('.store-modal-form-btn');
+<!-- Store thank modal -->
+<div class="store-modal-thank modal" data-modal="5">
+  <button class="store-modal-btn-close btn js-modal-close" type="button">
+    <svg
+      width="24px"
+      height="24px"
+      viewBox="0 0 1024 1024"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="#000000"
+        d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"
+      />
+    </svg>
+  </button>
+  <img
+    class="store-modal-img"
+    src="./img/modal_store.img/modal_store_flowers.png"
+    srcset="
+      ./img/modal_store.img/modal_store_flowers_188.png 188w,
+      ./img/modal_store.img/modal_store_flowers_266.png 266w,
+      ./img/modal_store.img/modal_store_flowers_376.png 376w,
+      ./img/modal_store.img/modal_store_flowers_532.png 532w
+    "
+    sizes="(min-width: 1280px) 266px, (min-width: 768px) 266px, (min-width: 480px) 188px, 100vw"
+    alt="Flowers"
+    width="188"
+    height="142"
+  />
+  <strong class="store-modal-thank-title">Thank you!</strong>
+  <p class="store-modal-thank-desc">
+    We have received your contact details and will reach you soon.
+  </p>
+  <button class="store-modal-thank-btn btn js-modal-close" type="submit">
+    Continue
+  </button>
+</div>
+<!-- <script src="./js/modal.js"></script> -->
 
-    button.disabled = true;
+<script>
+  let input = document.querySelector('.store-modal-form-field');
+  let button = document.querySelector('.store-modal-form-btn');
 
-    input.addEventListener('change', stateHandle);
+  button.disabled = true;
 
-    function stateHandle() {
-      if (document.querySelector('.store-modal-form-field').value === '') {
-        button.disabled = true;
-      } else {
-        button.disabled = false;
-      }
+  input.addEventListener('change', stateHandle);
+
+  function stateHandle() {
+    if (document.querySelector('.store-modal-form-field').value === '') {
+      button.disabled = true;
+    } else {
+      button.disabled = false;
     }
-  </script>
-</div> -->
-<!-- </div> -->
+  }
+</script>
