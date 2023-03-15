@@ -13,6 +13,7 @@ line-height: 1.25;
 @media screen and (min-width: 768px) {
     .about-desk{
         display: flex;
+        align-items: center;
     }
     .about-text{
         max-width: 322px;
@@ -23,7 +24,7 @@ line-height: 1.2;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .about-text{
         max-width: 510px;
         margin-right: 90px;
