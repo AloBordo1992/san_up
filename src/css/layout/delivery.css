@@ -48,6 +48,16 @@
     margin-bottom: 40px;
   }
 
+  .img-delivery-wrap {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+  }
+
   .delivery-item-number {
     font-size: 26px;
     width: 15px;
