@@ -4,14 +4,18 @@
     background-color: #000000;
 }
 .footer-title {
-    padding-top: 32px;
-    padding-bottom: 18px;
+    font-weight: 700;
+    margin-top: 32px;
+    font-size: 18px; 
+    line-height: 22px;
+    margin-bottom: 18px;
     color: #ffffff;
 }
 .footer-item {
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     color: #ffffff;
 }
 .footer-set1{
@@ -19,64 +23,70 @@
 }
 
 .open-time {
-    padding-top: 32px;
+    font-weight: 700;
+    margin-top: 32px;
     font-size: 18px; 
     line-height: 22px;
     color: #ffffff;
 }
 .worked {
-    padding-top: 18px;
+    font-weight: 500;
+    margin-top: 18px;
     font-size: 14px;
     line-height: 17px;
     color: #ffffff;
 }
 .footer-contact {
-    padding-top: 32px;
+    font-weight: 700;
+    margin-top: 32px;
     font-size: 18px;
     line-height: 22px;
     color: #ffffff;
 }
 .footer-str{
-    padding-top: 12px;
+    font-weight: 500;
+    margin-top: 12px;
     font-size: 14px;
     line-height: 17px;
     color: #ffffff;
 }
 .contact-items {
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    padding-top: 12px;
+    margin-top: 12px;
     color: #ffffff;
 }
 .footer-str{
 }
 
 .footer-set2{
-    padding-right: 32px;
+    margin-right: 32px;
 }
 
 .footer-icon-list {
-    padding-top: 32px;
+    margin-top: 32px;
     display: flex;
 }
 .footer-icon-item{
-    padding-right: 23.33px;
+    margin-right: 23.33px;
 }
 .footer-icon-link {
-    fill: #ffffff;
+    stroke:  #FFFFFF;
+}
+.footer-logo_icon{
+    fill: 
+    #FFFFFF;
 }
 
+.footer-logo{
+    display: none;
+}
 
 @media screen and (min-width: 480px) {
-    .container {
-        min-width: 320px;
-    }
 }
 
 @media screen and (min-width: 768px) {
-    .container{
-        max-width: 720px;
-    }
     .footer-set1{
         padding: 0;
     }
@@ -126,11 +136,56 @@
     .footer-icon-item{
         margin-bottom: 22.67px;
     }
+    .footer-logo{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px) {
     
     .footer-br{
         display: none;
+    }
+    .footer-logo{
+        display: contents;
+    }
+    .footer-logo_icon{
+        margin-top: 72px;
+        margin-right: 210px;
+    }
+    .footer-title {
+        margin-top: 72px;
+        margin-right: 96px;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 18px;
+    }
+    .footer-item {
+        font-size: 16px;
+        line-height: 19px;
+        padding-bottom: 12px;
+    }
+    .open-time {
+        margin-top: 72px;
+        margin-right: 96px;
+        font-size: 20px; 
+        line-height: 24px;
+    }
+    .worked {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .footer-contact {
+        margin-top: 72px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .footer-str{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .contact-items {
+        font-size: 16px;
+        line-height: 19px;
     }
 }
