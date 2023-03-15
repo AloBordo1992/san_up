@@ -5,9 +5,8 @@
     padding-bottom: 100px;
 }
 
-.hero-image {
+.hero-image-mob {
     display: flex;
-
     padding-top: 95px;
     padding-bottom: 36px;
     margin-left: 14px;
@@ -25,9 +24,7 @@
 
 }
 
-
-
-.hero-btn {
+.hero-btn-mob {
     display: flex;
     margin-left: 2px;
     padding-bottom: 124px;
@@ -39,9 +36,105 @@
     display: flex;
     padding-bottom: 146px;
     font-weight: 400;
-    padding-left: 11px;
     width: 46px;
     font-size: 14px;
     line-height: calc(17 / 14);
 
+}
+
+.hero-btn-tab {
+    display: none;
+}
+
+.hero-image-tab {
+    display: none;
+}
+
+.hero-btn-desk {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-btn-tab {
+        display: flex;
+        margin-left: 2px;
+        padding-bottom: 318px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .hero-row {
+        display: flex;
+        height: 825px;
+    }
+
+
+    .hero-image-tab {
+        display: flex;
+        padding-bottom: 95px;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+
+    .hero-btn-mob {
+        display: none;
+    }
+
+    .hero-btn-desk {
+        display: none;
+    }
+
+    .hero-image-mob {
+        display: none;
+    }
+
+    .hero-title {
+
+        font-size: 120px;
+        line-height: calc(146 /120);
+    }
+
+    .hero-subtitle {
+        width: 76px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: calc(29 / 24);
+        padding-bottom: 372px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+
+    .hero-btn-tab {
+        display: none;
+    }
+
+    .hero-btn-desk {
+        display: flex;
+        padding-bottom: 334px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .hero-subtitle {
+        width: 76px;
+
+        font-size: 32px;
+        line-height: calc(39 / 32);
+        padding-bottom: 378px;
+    }
+
+    .hero-image-tab {
+        display: flex;
+        padding-bottom: 93px;
+        margin-left: 110px;
+        margin-right: 110px;
+    }
+
+    .hero-title {
+        font-weight: 400;
+        font-size: 160px;
+        line-height: calc(195 / 160);
+    }
 }

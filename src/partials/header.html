@@ -1,8 +1,14 @@
 <header class="header header-js">
 
-  <div class="container header-box"><a href="" class="header-logo"><svg class="header-logo_icon" width="45" height="35">
+  <div class="container header-box header-container">
+    <a href="" class="header-logo header-mob"><svg class="header-logo_icon" width="45" height="35">
         <use href="./img/icon.svg#icon-logo-mob"></use>
       </svg></a>
+    <a href="" class="header-logo header-big"><svg class="header-logo_icon" width="45" height="35">
+        <use href="./img/icon.svg#icon-logo-big"></use>
+      </svg></a>
+
+    </svg></a>
 
     <nav class="header-nav">
       <ul class="nav-list list">
@@ -15,25 +21,24 @@
     </nav>
 
     <div class="header-tel"><a href="tel" class="header-tel-link"><svg class="header-tel_icon" width="20" height="20">
-          <use href="../img/icon.svg#icon-tel-mobile"></use>
+          <use href="./img/icon.svg#icon-tel-mobile"></use>
         </svg></a>
     </div>
+    <!-- burger menu -->
 
-
-    <button type="button" class="menu-burger js-open-menu">
+    <button class="menu-burger js-open-menu" type="button">
       <svg class="menu-burger__icon" width="24" height="24">
         <use href="./img/icon.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
-  <!-- burger menu -->
+
   <div class="menu js-menu-container" id="mobile-menu">
-    <button class="menu__button js-close-menu">
+    <button class="menu__button js-close-menu" type="button">
       <svg class="menu__icon" width="24" height="24">
         <use href="./img/icon.svg#icon-close"></use>
       </svg>
     </button>
-
     <nav class="menu__nav">
       <ul class="menu__nav-list list">
         <li class="menu__nav-item"><a href="#anemone" class="menu-nav-link js-close-menu link">Anemone</a>
@@ -48,7 +53,5 @@
         </li>
       </ul>
     </nav>
-
-
   </div>
 </header>
