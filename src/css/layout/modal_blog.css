@@ -48,6 +48,7 @@
     width: 16px;
     height: 16px;
     fill: #000000;
+    z-index: 2;
 }
 
 .modal3.active {
@@ -141,11 +142,28 @@
     padding: 0 12px;
     border: 1px solid #D7D7D7;
     border-radius: 4px;
-    transition: border 250ms var(--timing-function);
+    outline: 2px solid transparent;
+    outline-offset: -1px;
 }
 
-.modal-form-input:focus {
+.modal-form-input::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-form-input:focus,
+.modal-form-input:focus-visible {
     border: 1px solid rgba(17, 17, 17, 0.7);
+}
+
+.modal-form-input:not(:placeholder-shown):required:valid {
+    border-color: #3CBC81;
+}
+
+.modal-form-input:not(:placeholder-shown):required:invalid {
+    border-color: #E74A3B;
 }
 
 .contact-form-btn {
@@ -159,6 +177,14 @@
     font-size: 14px;
     line-height: calc(17 / 14);
     color: #FFFFFF;
+}
+
+.contact-form-btn:hover {
+    background-color: #E25B41;
+}
+
+.contact-form-btn:focus {
+    background-color: #FA6F54;
 }
 
 @media screen and (min-width:768px) {
