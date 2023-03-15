@@ -100,32 +100,32 @@ document.addEventListener('DOMContentLoaded', function () {
 // При відкритті модалки на неї і на бекдроп буде додаватися клас active, тому треба відповідні стилі додати на модалку і бекдроп. Є клас active, вони видимі, немає -- невидимі
 
 // Store modal js
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-store-modal-open]"),
-    closeModalBtn: document.querySelector("[data-store-modal-close]"),
-    modal: document.querySelector("[data-store-modal]"),
-  };
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector("[data-store-modal-open]"),
+//     closeModalBtn: document.querySelector("[data-store-modal-close]"),
+//     modal: document.querySelector("[data-store-modal]"),
+//   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+//   refs.openModalBtn.addEventListener("click", toggleModal);
+//   refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+//   function toggleModal() {
+//     refs.modal.classList.toggle("is-hidden");
+//   }
+// })();
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-store-modal-thank-open]"),
-    closeModalBtn: document.querySelector("[data-store-modal-thank-close]"),
-    modal: document.querySelector("[data-store-modal-thank]"),
-  };
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector("[data-store-modal-thank-open]"),
+//     closeModalBtn: document.querySelector("[data-store-modal-thank-close]"),
+//     modal: document.querySelector("[data-store-modal-thank]"),
+//   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+//   refs.openModalBtn.addEventListener("click", toggleModal);
+//   refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+//   function toggleModal() {
+//     refs.modal.classList.toggle("is-hidden");
+//   }
+// })();

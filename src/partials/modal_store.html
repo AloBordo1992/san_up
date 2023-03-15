@@ -1,10 +1,19 @@
-<div class="store-backdrop is-hidden" data-store-modal>
-  <div class="store-modal-contact">
+<!-- <div class="store-backdrop is-hidden" data-store-modal> -->
+  <div class="store-modal-contact modal" data-modal="4">
     <button
-      class="store-modal-btn-close btn"
+      class="store-modal-btn-close btn js-modal-close"
       type="button"
-      data-store-modal-close
-    ></button>
+    ><svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 1024 1024"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="#000000"
+          d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"
+        />
+      </svg></button>
     <strong class="store-modal-title">Contact us</strong>
     <p class="store-modal-desc">
       If you have any additional questions or you want to clarify something
@@ -39,15 +48,60 @@
         />
       </div>
       <button
-        class="store-modal-form-btn btn"
+        class="store-modal-form-btn btn js-modal-open js-modal-close" data-modal="5"
         type="submit"
         disabled
-        data-store-modal-thank-open
       >
         Send
       </button>
     </form>
   </div>
+
+  <!-- Store thank modal -->
+
+  <!-- <div class="store-thank-backdrop is-hidden" data-store-modal-thank> -->
+    <div class="store-modal-thank modal" data-modal="5">
+      <button
+        class="store-modal-btn-close btn js-modal-close"
+        type="button"
+      ><svg
+        width="24px"
+        height="24px"
+        viewBox="0 0 1024 1024"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="#000000"
+          d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"
+        />
+      </svg></button>
+      <img
+        class="store-modal-img"
+        src="./img/modal_store.img/modal_store_flowers.png"
+        srcset="
+          ./img/modal_store.img/modal_store_flowers_188.png 188w,
+          ./img/modal_store.img/modal_store_flowers_266.png 266w,
+          ./img/modal_store.img/modal_store_flowers_376.png 376w,
+          ./img/modal_store.img/modal_store_flowers_532.png 532w
+        "
+        sizes="(min-width: 1280px) 266px, (min-width: 768px) 266px, (min-width: 480px) 188px, 100vw"
+        alt="Flowers"
+        width="188"
+        height="142"
+      />
+      <strong class="store-modal-thank-title">Thank you!</strong>
+      <p class="store-modal-thank-desc">
+        We have received your contact details and will reach you soon.
+      </p>
+      <button
+        class="store-modal-thank-btn btn js-modal-close"
+        type="submit"
+      >
+        Continue
+      </button>
+    </div>
+  </div>
+  <!-- <script src="./js/modal.js"></script> -->
 
   <script>
     let input = document.querySelector('.store-modal-form-field');
@@ -65,42 +119,78 @@
       }
     }
   </script>
-</div>
+</div> -->
+<!-- </div> -->
 
-<!-- Store thank modal -->
 
-<div class="store-thank-backdrop is-hidden" data-store-modal-thank>
-  <div class="store-modal-thank">
-    <button
-      class="store-modal-btn-close btn"
-      type="button"
-      data-store-modal-thank-close
-    ></button>
-    <img
-      class="store-modal-img"
-      src="./img/modal_store.img/modal_store_flowers.png"
-      srcset="
-        ./img/modal_store.img/modal_store_flowers_188.png 188w,
-        ./img/modal_store.img/modal_store_flowers_266.png 266w,
-        ./img/modal_store.img/modal_store_flowers_376.png 376w,
-        ./img/modal_store.img/modal_store_flowers_532.png 532w
-      "
-      sizes="(min-width: 1280px) 266px, (min-width: 768px) 266px, (min-width: 480px) 188px, 100vw"
-      alt="Flowers"
-      width="188"
-      height="142"
-    />
-    <strong class="store-modal-thank-title">Thank you!</strong>
-    <p class="store-modal-thank-desc">
-      We have received your contact details and will reach you soon.
-    </p>
-    <button
-      class="store-modal-thank-btn btn"
-      type="submit"
-      data-store-modal-thank-close
-    >
-      Continue
-    </button>
-  </div>
-</div>
-<script src="./js/modal.js"></script>
+!function(e){"function"!=typeof e.matches&&(e.matches=e.msMatchesSelector||e.mozMatchesSelector||e.webkitMatchesSelector||function(e){for(var t=this,o=(t.document||t.ownerDocument).querySelectorAll(e),n=0;o[n]&&o[n]!==t;)++n;return Boolean(o[n])}),"function"!=typeof e.closest&&(e.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window.Element.prototype);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+   /* Записываем в переменные массив элементов-кнопок и подложку.
+      Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
+   var modalButtons = document.querySelectorAll('.js-open-modal'),
+       overlay      = document.querySelector('.js-overlay-modal'),
+       closeButtons = document.querySelectorAll('.js-modal-close');
+
+
+   /* Перебираем массив кнопок */
+   modalButtons.forEach(function(item){
+
+      /* Назначаем каждой кнопке обработчик клика */
+      item.addEventListener('click', function(e) {
+
+         /* Предотвращаем стандартное действие элемента. Так как кнопку разные
+            люди могут сделать по-разному. Кто-то сделает ссылку, кто-то кнопку.
+            Нужно подстраховаться. */
+         e.preventDefault();
+
+         /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
+            и будем искать модальное окно с таким же атрибутом. */
+         var modalId = this.getAttribute('data-modal'),
+             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+
+
+         /* После того как нашли нужное модальное окно, добавим классы
+            подложке и окну чтобы показать их. */
+         modalElem.classList.add('active');
+         overlay.classList.add('active');
+      }); // end click
+
+   }); // end foreach
+
+
+   closeButtons.forEach(function(item){
+
+      item.addEventListener('click', function(e) {
+         var parentModal = this.closest('.modal');
+
+         parentModal.classList.remove('active');
+         overlay.classList.remove('active');
+      });
+
+   }); // end foreach
+
+
+    document.body.addEventListener('keyup', function (e) {
+        var key = e.keyCode;
+
+        if (key == 27) {
+
+            document.querySelector('.modal.active').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
+        };
+    }, false);
+
+
+    overlay.addEventListener('click', function() {
+        document.querySelector('.modal.active').classList.remove('active');
+        this.classList.remove('active');
+    });
+
+
+
+
+}); // end ready
+
