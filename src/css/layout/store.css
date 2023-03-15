@@ -1,4 +1,6 @@
-
+.store {
+    padding-bottom: 100px;
+}
 .store-title {
 margin-bottom: 32px;
 display: flex;
