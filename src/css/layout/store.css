@@ -21,8 +21,6 @@ font-size: 16px;
 line-height: 1.25;
 margin-top: 12px;
 margin-bottom: 6px;
-display: flex;
-align-items: center;
 }
 
 .store-price {
@@ -45,6 +43,9 @@ opacity: 0.6;
         font-weight: 500;
 font-size: 32px;
 line-height: 1.2;
+display: flex;
+align-items: center;
+white-space: nowrap;
     }
     .store-label::after {
         content: '';
@@ -62,7 +63,7 @@ line-height: 1.2;
         width: calc((100% - 32px) / 2);
     }
     .store-list {
-        gap: 32px;
+        column-gap: 32px;
         row-gap: 40px;
     }
     .store-btn{
