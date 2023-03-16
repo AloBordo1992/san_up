@@ -1,5 +1,5 @@
-<div class="store-backdrop">
-  <div class="store-modal-contact">
+<div class="store-backdrop js-backdrop-modal" data-modal>
+  <div class="store-modal-contact modal3" data-modal="4">
     <button class="store-modal-btn-close btn" type="button"></button>
     <strong class="store-modal-title">Contact us</strong>
     <p class="store-modal-desc">
@@ -9,32 +9,17 @@
     </p>
     <form class="store-modal-form" name="store_modal_form">
       <!-- Name Field -->
-      <label class="store-modal-form-label" for="store_username"
-        >Username</label
-      >
+      <label class="store-modal-form-label" for="store_username">Username</label>
       <div class="store-modal-form-group">
-        <input
-          class="store-modal-form-field"
-          type="text"
-          name="store_username"
-          id="store_username"
-          placeholder="Your name"
-          required
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="Username must be two words separated by space."
-        />
+        <input class="store-modal-form-field" type="text" name="store_username" id="store_username"
+          placeholder="Your name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space." />
       </div>
       <!-- Email Field -->
       <label class="store-modal-form-label" for="store_email">Email</label>
       <div class="store-modal-form-group">
-        <input
-          class="store-modal-form-field"
-          type="email"
-          name="store_email"
-          id="store_email"
-          placeholder="Your email"
-          required
-        />
+        <input class="store-modal-form-field" type="email" name="store_email" id="store_email" placeholder="Your email"
+          required />
       </div>
       <button class="store-modal-form-btn btn" type="submit" disabled>
         Send
@@ -62,20 +47,13 @@
   <div class="store-modal-thank">
     <button class="store-modal-btn-close btn" type="button"></button>
     <strong class="store-modal-title">Thank you!</strong>
-    <img
-      class="store-modal-img"
-      src="./img/modal_store.img/modal_store_flowers.png"
-      srcset="
+    <img class="store-modal-img" src="./img/modal_store.img/modal_store_flowers.png" srcset="
         ./img/modal_store.img/modal_store_flowers_188.png 188w,
         ./img/modal_store.img/modal_store_flowers_266.png 266w,
         ./img/modal_store.img/modal_store_flowers_376.png 376w,
         ./img/modal_store.img/modal_store_flowers_532.png 532w
-      "
-      sizes="(min-width: 1280px) 266px, (min-width: 768px) 266px, (min-width: 480px) 188px, 100vw"
-      alt="Flowers"
-      width="188"
-      height="142"
-    />
+      " sizes="(min-width: 1280px) 266px, (min-width: 768px) 266px, (min-width: 480px) 188px, 100vw" alt="Flowers"
+      width="188" height="142" />
     <p class="store-modal-desc">
       We have received your contact details and will reach you soon.
     </p>
