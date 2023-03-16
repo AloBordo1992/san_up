@@ -21,13 +21,13 @@
 @media screen and (min-width: 768px) {
   .container {
     min-width: 768px;
-    padding: 0 24px 100px 24px;
+    padding: 0px 24px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
     min-width: 1280px;
-    padding: 0 24px 100px 24px;
+    padding: 0px 24px;
   }
 }
