@@ -48,7 +48,7 @@
     width: 16px;
     height: 16px;
     fill: #000000;
-    }
+}
 
 .modal3.active {
     visibility: visible;
@@ -78,7 +78,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .modal {
         background-image: url(../../img/blog/popup-img_desk@1x.jpg);
     }
