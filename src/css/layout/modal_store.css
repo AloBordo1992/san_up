@@ -1,3 +1,7 @@
+.modal_store{
+    width: 272px;
+    height: 357px;  
+}
 .store-modal-title {
     font-weight: 600;
     font-size: 32px;
@@ -14,3 +18,33 @@
 
     margin-bottom: 18px;
 }
+
+@media screen and (min-width: 768px) {
+    .modal_store {
+        width: 480px;
+        height: 511px;    
+    }
+    
+  }
+  @media screen and (min-width: 1280px) {
+    
+  }
+
+/* ----------------------------------------------- */
+
+
+  .modal_store_two{
+    width: 272px;
+    height: 357px; 
+}
+
+@media screen and (min-width: 768px) {
+    .modal_store_two {
+        width: 480px;
+        height: 505px;  
+    }
+    
+  }
+  @media screen and (min-width: 1280px) {
+    
+  }
