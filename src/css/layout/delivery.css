@@ -1,5 +1,6 @@
 .delivery {
   display: block;
+  padding-bottom: 100px;
 }
 
 .delivery-title {
@@ -7,12 +8,16 @@
 }
 
 .delivery-list {
-  margin-bottom: 32px;
+  margin-bottom: 26px;
 }
 
 .delivery-item {
   display: flex;
   margin-bottom: 20px;
+}
+
+.delivery-item-none {
+  margin-bottom: 0;
 }
 
 .delivery-item-number {
@@ -22,11 +27,11 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  width: 40px;
-  height: 40px;
+  width: 12px;
+  height: 24px;
   border: 1px solid #000000;
   border-radius: 50%;
-  padding: 8px 14px 8px 14px;
+  padding: 8px 16px;
 }
 
 .delivery-item-custom {
@@ -40,8 +45,18 @@
   padding-right: 8px;
 }
 
+.img-delivery-wrap {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+}
+
 .img-delivery {
-  width: 100%;
+  width: 352px;
 }
 
 @media screen and (min-width: 768px) {
@@ -49,30 +64,74 @@
     margin-bottom: 40px;
   }
 
+  .img-delivery-wrap {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+  }
+
   .delivery-item-number {
     font-size: 26px;
-    width: 64px;
-    height: 64px;
+    width: 15px;
+    height: 32px;
     padding: 16px 24px 16px 24px;
   }
 
   .delivery-item-custom {
     font-size: 24px;
+    line-height: 1.2;
     margin-left: 20px;
+  }
+
+  .img-delivery-wrap {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-delivery {
+    width: 816px;
+    /* max-width: none; */
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .delivery-list {
+    margin-bottom: 60px;
+  }
+
   .delivery-item-number {
     margin-left: 72px;
-    width: 64px;
-    height: 64px;
+    width: 15px;
+    height: 32px;
     padding: 16px 24px 16px 24px;
   }
 
   .delivery-item-custom {
     font-size: 32px;
     margin-left: 52px;
-    padding-right: 185px;
+  }
+
+  .img-delivery-wrap {
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-delivery {
+    width: 1324px;
+    max-width: none;
   }
 }

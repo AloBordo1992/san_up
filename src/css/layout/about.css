@@ -1,44 +1,32 @@
-.container {
+.about {
+    padding-bottom: 100px;
 }
 .about-title {
     margin-bottom: 32px;
-    font-size: 24px;
-line-height: 1.2;
+    display: flex;
+    align-items: center;
 }
 .about-text {
     margin-bottom: 16px;
     font-size: 16px;
 line-height: 1.25;
 }
-.about-desk{
-    margin-bottom: 60px;
-}
 
 @media screen and (min-width: 768px) {
-    .container{
-        max-width: 720px;
-    }
     .about-desk{
         display: flex;
-        margin-bottom: 100px;
+        align-items: center;
     }
     .about-text{
         max-width: 322px;
         margin-right: 54px;
         font-weight: 400;
-font-size: 20px;
-line-height: 1.2;
-    }
-    .about-title {
-        font-size: 44px;
-line-height: 1.2;
+        font-size: 20px;
+        line-height: 1.2;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .container{
-        max-width: 1232px;
-    }
+@media screen and (min-width: 1280px) {
     .about-text{
         max-width: 510px;
         margin-right: 90px;
@@ -46,8 +34,6 @@ font-size: 22px;
 line-height: 1.2;
     }
     .about-title {
-        font-size: 44px;
-line-height: 1.2;
 margin-bottom: 26px;
     }
     .about-desk{

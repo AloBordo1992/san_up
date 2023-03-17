@@ -21,7 +21,12 @@
         <input class="store-modal-form-field" type="email" name="store_email" id="store_email" placeholder="Your email"
           required />
       </div>
-      <button class="store-modal-form-btn btn" type="submit" disabled>
+      <button
+        class="store-modal-form-btn btn"
+        type="submit"
+        disabled
+        data-store-modal-thank-open
+      >
         Send
       </button>
     </form>
@@ -31,19 +36,23 @@
     let input = document.querySelector('.store-modal-form-field');
     let button = document.querySelector('.store-modal-form-btn');
 
-    button.disabled = true; //setting button state to disabled
+    button.disabled = true;
 
     input.addEventListener('change', stateHandle);
 
     function stateHandle() {
       if (document.querySelector('.store-modal-form-field').value === '') {
-        button.disabled = true; //button remains disabled
+        button.disabled = true;
       } else {
-        button.disabled = false; //button is enabled
+        button.disabled = false;
       }
     }
   </script>
+</div>
 
+<!-- Store thank modal -->
+
+<div class="store-thank-backdrop is-hidden" data-store-modal-thank>
   <div class="store-modal-thank">
     <button class="store-modal-btn-close btn" type="button"></button>
     <strong class="store-modal-title">Thank you!</strong>
@@ -57,6 +66,12 @@
     <p class="store-modal-desc">
       We have received your contact details and will reach you soon.
     </p>
-    <button class="store-modal-btn btn" type="submit">Continue</button>
+    <button
+      class="store-modal-thank-btn btn"
+      type="submit"
+      data-store-modal-thank-close
+    >
+      Continue
+    </button>
   </div>
 </div>
