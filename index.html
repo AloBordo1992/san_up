@@ -8,11 +8,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     
     <script type="module" crossorigin src="/san_up/assets/index-11c9e10b.js"></script>
-    <link rel="stylesheet" href="/san_up/assets/index-7bb46a01.css">
+    <link rel="stylesheet" href="/san_up/assets/index-613db6a9.css">
   </head>
   <body>
     <body>
-      ENOENT: no such file or directory, open '/home/runner/work/san_up/san_up/src/partials/heder.html'
+      <header class="header header-js">
+
+  <div class="container header-box"><a href="" class="header-logo"><svg class="header-logo_icon" width="45" height="35">
+        <use href="/san_up/assets/icon-18b96db3.svg#icon-logo-mob"></use>
+      </svg></a>
+
+    <nav class="header-nav">
+      <ul class="nav-list list">
+        <li class="nav-text"><a href="#anemone" class="nav-link link">Anemone</a></li>
+        <li class="nav-text"><a href="#about" class="nav-link link">About us</a></li>
+        <li class="nav-text"><a href="#store" class="nav-link link">Store</a></li>
+        <li class="nav-text"><a href="#delivery" class="nav-link link">Delivery</a></li>
+        <li class="nav-text"><a href="#blog" class="nav-link link">Blog</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-tel"><a href="tel" class="header-tel-link"><svg class="header-tel_icon" width="20" height="20">
+          <use href="../img/icon.svg#icon-tel-mobile"></use>
+        </svg></a>
+    </div>
+
+
+    <button type="button" class="menu-burger js-open-menu">
+      <svg class="menu-burger__icon" width="24" height="24">
+        <use href="/san_up/assets/icon-18b96db3.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- burger menu -->
+  <div class="menu js-menu-container" id="mobile-menu">
+    <button class="menu__button js-close-menu">
+      <svg class="menu__icon" width="24" height="24">
+        <use href="/san_up/assets/icon-18b96db3.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <nav class="menu__nav">
+      <ul class="menu__nav-list list">
+        <li class="menu__nav-item"><a href="#anemone" class="menu-nav-link js-close-menu link">Anemone</a>
+        </li>
+        <li class="menu__nav-item"><a href="#about" class="menu-nav-link js-close-menu link">About us</a>
+        </li>
+        <li class="menu__nav-item"><a href="#store" class="menu-nav-link js-close-menu link">Store</a>
+        </li>
+        <li class="menu__nav-item"><a href="#delivery" class="menu-nav-link js-close-menu link">Delivery</a>
+        </li>
+        <li class="menu__nav-item"><a href="#blog" class="menu-nav-link js-close-menu link">Blog</a>
+        </li>
+      </ul>
+    </nav>
+
+
+  </div>
+</header>
       <main>
         <section class="hero-section">
     <div class="hero-container hero-row">
@@ -88,7 +141,10 @@
         <p class="store-price">from $60</p>
       </li>
     </ul>
-    <button type="button" class="store-btn btn stail_btn js-open-modal" data-modal="4">Order flowers</button>
+    <button type="button" class="stail_btn">
+      <a href="#" class="stail_btn js-open-modal" data-modal="1">Order flowers
+      </a>
+    </button> 
   </div>
 </section>
 
@@ -262,84 +318,50 @@
   </div>
 </div>
 
-      <div class="store-backdrop is-hidden" data-store-modal>
-  <div class="store-modal-contact">
-    <button
-      class="store-modal-btn-close btn"
-      type="button"
-      data-store-modal-close
-    ></button>
-    <strong class="store-modal-title">Contact us</strong>
-    <p class="store-modal-desc">
-      If you have any additional questions or you want to clarify something
-      before you make an order please fill in your contact details. We will call
-      you back.
-    </p>
-    <form class="store-modal-form" name="store_modal_form">
-      <!-- Name Field -->
-      <label class="store-modal-form-label" for="store_username">Name</label>
-      <div class="store-modal-form-group">
-        <input
-          class="store-modal-form-field"
-          type="text"
-          name="store_username"
-          id="store_username"
-          placeholder="Your name"
-          required
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="Username must be two words separated by space."
-        />
-      </div>
-      <!-- Email Field -->
-      <label class="store-modal-form-label" for="store_email">Email</label>
-      <div class="store-modal-form-group">
-        <input
-          class="store-modal-form-field"
-          type="email"
-          name="store_email"
-          id="store_email"
-          placeholder="Your email"
-          required
-        />
-      </div>
-      <button
-        class="store-modal-form-btn btn"
-        type="submit"
-        disabled
-        data-store-modal-thank-open
-      >
-        Send
-      </button>
-    </form>
-  </div>
-
-  <script>
-    let input = document.querySelector('.store-modal-form-field');
-    let button = document.querySelector('.store-modal-form-btn');
-
-    button.disabled = true;
-
-    input.addEventListener('change', stateHandle);
-
-    function stateHandle() {
-      if (document.querySelector('.store-modal-form-field').value === '') {
-        button.disabled = true;
-      } else {
-        button.disabled = false;
-      }
-    }
-  </script>
+      <div class="modal" data-modal="1">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+  <strong class="store-modal-title">Contact us</strong>
+  <p class="store-modal-desc">
+    If you have any additional questions or you want to clarify something
+    before you make an order please fill in your contact details. We will call
+    you back.
+  </p>
+  <form class="store-modal-form" name="store_modal_form">
+    <!-- Name Field -->
+    <label class="store-modal-form-label" for="store_username">Name</label>
+    <div class="store-modal-form-group">
+      <input
+        class="store-modal-form-field"
+        type="text"
+        name="store_username"
+        id="store_username"
+        placeholder="Your name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+      />
+    </div>
+     <!-- Email Field -->
+    <label class="store-modal-form-label" for="store_email">Email</label>
+    <div class="store-modal-form-group">
+       <input
+         class="store-modal-form-field"
+         type="email"
+         name="store_email"
+         id="store_email"
+         placeholder="Your email"
+         required
+       />
+    </div>
+  </form>
+  <button type="button" class="stail_btn">
+    <a href="#" class="js-modal-close js-open-modal" data-modal="2">Send</a>
+  </button> 
 </div>
-
-<!-- Store thank modal -->
-
-<div class="store-thank-backdrop is-hidden" data-store-modal-thank>
-  <div class="store-modal-thank">
-    <button
-      class="store-modal-btn-close btn"
-      type="button"
-      data-store-modal-thank-close
-    ></button>
+<div class="modal" data-modal="2">
+  <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
     <img
       class="store-modal-img"
       src="/san_up/assets/modal_store_flowers-e63c5494.png"
@@ -353,16 +375,11 @@
     <p class="store-modal-thank-desc">
       We have received your contact details and will reach you soon.
     </p>
-    <button
-      class="store-modal-thank-btn btn"
-      type="submit"
-      data-store-modal-thank-close
-    >
-      Continue
-    </button>
-  </div>
-</div>
-<script src="./js/modal.js"></script>
+    <button type="button" class="stail_btn">
+      <a href="#" class="js-modal-close " data-modal="2">Continue</a>
+    </button> 
+</div>  
+
 
       <div class="overlay js-overlay-modal"></div>
       
