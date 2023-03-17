@@ -1,81 +1,47 @@
-<div class="store-backdrop is-hidden" data-store-modal>
-  <div class="store-modal-contact">
-    <button
-      class="store-modal-btn-close btn"
-      type="button"
-      data-store-modal-close
-    ></button>
-    <strong class="store-modal-title">Contact us</strong>
-    <p class="store-modal-desc">
-      If you have any additional questions or you want to clarify something
-      before you make an order please fill in your contact details. We will call
-      you back.
-    </p>
-    <form class="store-modal-form" name="store_modal_form">
-      <!-- Name Field -->
-      <label class="store-modal-form-label" for="store_username">Name</label>
-      <div class="store-modal-form-group">
-        <input
-          class="store-modal-form-field"
-          type="text"
-          name="store_username"
-          id="store_username"
-          placeholder="Your name"
-          required
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-          title="Username must be two words separated by space."
-        />
-      </div>
-      <!-- Email Field -->
-      <label class="store-modal-form-label" for="store_email">Email</label>
-      <div class="store-modal-form-group">
-        <input
-          class="store-modal-form-field"
-          type="email"
-          name="store_email"
-          id="store_email"
-          placeholder="Your email"
-          required
-        />
-      </div>
-      <button
-        class="store-modal-form-btn btn"
-        type="submit"
-        disabled
-        data-store-modal-thank-open
-      >
-        Send
-      </button>
-    </form>
-  </div>
-
-  <script>
-    let input = document.querySelector('.store-modal-form-field');
-    let button = document.querySelector('.store-modal-form-btn');
-
-    button.disabled = true;
-
-    input.addEventListener('change', stateHandle);
-
-    function stateHandle() {
-      if (document.querySelector('.store-modal-form-field').value === '') {
-        button.disabled = true;
-      } else {
-        button.disabled = false;
-      }
-    }
-  </script>
+<div class="modal" data-modal="1">
+  <!--   Svg иконка для закрытия окна  -->
+  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+  <strong class="store-modal-title">Contact us</strong>
+  <p class="store-modal-desc">
+    If you have any additional questions or you want to clarify something
+    before you make an order please fill in your contact details. We will call
+    you back.
+  </p>
+  <form class="store-modal-form" name="store_modal_form">
+    <!-- Name Field -->
+    <label class="store-modal-form-label" for="store_username">Name</label>
+    <div class="store-modal-form-group">
+      <input
+        class="store-modal-form-field"
+        type="text"
+        name="store_username"
+        id="store_username"
+        placeholder="Your name"
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+      />
+    </div>
+     <!-- Email Field -->
+    <label class="store-modal-form-label" for="store_email">Email</label>
+    <div class="store-modal-form-group">
+       <input
+         class="store-modal-form-field"
+         type="email"
+         name="store_email"
+         id="store_email"
+         placeholder="Your email"
+         required
+       />
+    </div>
+  </form>
+  <button type="button" class="stail_btn">
+    <a href="#" class="js-modal-close js-open-modal" data-modal="2">Send</a>
+  </button> 
 </div>
-
-<!-- Store thank modal -->
-
-<div class="store-thank-backdrop is-hidden" data-store-modal-thank>
-  <div class="store-modal-thank">
-    <button
-      class="store-modal-btn-close btn"
-      type="button"
-      data-store-modal-thank-close
-    ></button>
+<div class="modal" data-modal="2">
+  <!--   Svg иконка для закрытия окна  -->
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
     <img
       class="store-modal-img"
       src="./img/modal_store.img/modal_store_flowers.png"
@@ -94,13 +60,8 @@
     <p class="store-modal-thank-desc">
       We have received your contact details and will reach you soon.
     </p>
-    <button
-      class="store-modal-thank-btn btn"
-      type="submit"
-      data-store-modal-thank-close
-    >
-      Continue
-    </button>
-  </div>
-</div>
-<script src="./js/modal.js"></script>
+    <button type="button" class="stail_btn">
+      <a href="#" class="js-modal-close " data-modal="2">Continue</a>
+    </button> 
+</div>  
+
