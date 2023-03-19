@@ -153,8 +153,6 @@
 
 .hero {
     position: relative;
-    max-width: 480px;
-
     padding-bottom: 100px;
 }
 
@@ -281,8 +279,7 @@
 @media screen and (min-width: 1280px) {
     .hero {
         position: relative;
-
-        max-width: 1328px;
+        max-width: 1280px;
         height: 878px;
         margin: 0 auto;
     }
