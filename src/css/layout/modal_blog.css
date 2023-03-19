@@ -1,0 +1,18 @@
+.modal_blog {
+    width: 272px;
+    height: 380px;
+}
+@media screen and (min-width: 768px) {
+    .modal_blog {
+        width: 588px;
+        height: 644px; 
+    }
+    
+  }
+  @media screen and (min-width: 1280px) {
+    .modal_blog {
+        width: 860px;
+        height: 528px;   
+    }
+    
+  }
