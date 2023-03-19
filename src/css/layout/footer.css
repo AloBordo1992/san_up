@@ -72,7 +72,8 @@
     margin-right: 23.33px;
 }
 .footer-icon-link {
-    stroke:  #FFFFFF;
+    fill: #ffffff;
+    /* stroke:  #FFFFFF; */
 }
 .footer-logo_icon{
     fill: 
