@@ -113,29 +113,23 @@
      }
  }
 
- <<<<<<< Updated upstream @media screen and (min-width: 1200px) {
-
-     .store-label {
-         font-size: 36px;
-         line-height: 1.2;
-
-         =======@media screen and (min-width: 1200px) {
-             .store-label {
+        @media screen and (min-width: 1200px) {
+            .store-label {
                  font-size: 36px;
                  line-height: 1.2;
-                 >>>>>>>Stashed changes
+                 
              }
 
-             .store-price {
+            .store-price {
                  font-size: 28px;
                  line-height: 1.2;
              }
 
-             <<<<<<< Updated upstream=======.store-iteam {
+            .store-iteam {
                  width: calc((100% - 32px) / 2);
              }
 
-             >>>>>>>Stashed changes .store-list {
+            .store-list {
                  row-gap: 64px;
              }
          }
