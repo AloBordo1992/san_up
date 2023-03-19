@@ -1,18 +1,140 @@
 .modal_blog {
     width: 272px;
     height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.background_mod_blog{
+    width: 272px;
+    height: 121px;
+    background-color: #3CBC81;
+   
+    margin-bottom: 18px;
+}
+
+.title-mod {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: calc(23 / 19);
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.text-mod{
+    width: 236px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    margin-bottom: 18px; 
+}
+
+.modal-form {
+    width: 240px;
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-label {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #8E8F99;
+}
+
+.modal-form-input {
+    display: block;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    height: 35px;
+    padding: 0 12px;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -1px;
+    margin-bottom: 18px;
+}
+
+.modal-form-input::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-form-input:focus,
+.modal-form-input:focus-visible {
+    border: 1px solid rgba(17, 17, 17, 0.7);
+}
+
+
+.modal-form-input:not(:placeholder-shown):required:valid {
+    border-color: #3CBC81;
+    }
+
+.modal-form-input:not(:placeholder-shown):required:invalid {
+    border-color: #E74A3B;
+}    
+
+
+.btn_modal_blog {
+    border: none;
+    font-family: 'Montserrat';
+    background-color: #e86f54;
+    font-weight:600;
+    font-size: 14px;
+    line-height: calc(17/14);
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+  
+    color: #ffffff;
+    width: 236px;
+    height: 37px;
+    border-radius: 8px;
+  }
+  
+  .btn_modal_blog:hover {
+    background-color: #e25b41;
+  }
+  .btn_modal_blog:focus {
+    background-color: var(--color-focus);
+  }
+ 
+  
 @media screen and (min-width: 768px) {
     .modal_blog {
         width: 588px;
-        height: 644px; 
+        
     }
-    
-  }
+    .background_mod_blog{
+        width: 588px;
+        height: 271px;
+        margin-bottom: 28px;
+    }
+    .title-mod{
+        font-size: 28px;
+        line-height: calc(38/28);
+    }
+   
+ }
   @media screen and (min-width: 1280px) {
     .modal_blog {
         width: 860px;
         height: 528px;   
     }
-    
+    .btn_modal_blog {
+        font-size: 18px;
+        line-height: calc(22/18);
+        width: 336px;
+        height: 50px;
+      }
   }
