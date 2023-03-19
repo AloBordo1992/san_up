@@ -1,50 +1,13 @@
-/* mobile header */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    padding-top: 16px;
-}
-
-.header-bg {
-    background-image: linear-gradient(0deg, #b5b6b2a9, #f7f1d1bc);
-}
-
-.header-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.header-tel {
-    margin-left: auto;
-}
-
-.header-nav {
-    display: none;
-}
-
-.menu-burger {
-    border: none;
-    background-color: transparent;
-    margin-left: 8px;
-}
-
 /* menu window */
 .menu {
-    padding: 40px;
     position: relative;
-    background-color: #fffdc0;
+    background-color: #E86F54;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 11;
+    z-index: 101;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
@@ -54,15 +17,15 @@
 }
 
 .menu__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     width: 40px;
     height: 40px;
     background-color: transparent;
     border: none;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     right: 40px;
     top: 20px;
     cursor: pointer;
@@ -73,29 +36,170 @@
 }
 
 .menu__icon {
+    display: flex;
     width: 40px;
     height: 40px;
-    fill: black;
+    color: #ffffff;
 }
 
-.menu__button:focus,
-.menu__button:active {
-    fill: #7eb101;
+.menu__nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 124px;
+
 }
 
-
-.menu-nav-list {
+.menu__nav-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 26px;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-transform: uppercase;
+    color: #ffffff;
+
 }
 
-.menu-nav-link {
-    display: block;
-    padding: 30px 0;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    text-transform: uppercase;
-    color: #2c2c2c;
+/* header */
+.header-big,
+.header-nav {
+    display: none;
+}
+
+.header-effect {
+    position: relative;
+    background-color: rgba(200, 240, 240, 0.1);
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(135, 125, 245, 0.903) inset;
+    box-shadow: 0 1px 4px rgba(111, 212, 240, 0.3), 0 0 40px rgba(80, 175, 201, 0.3) inset;
+}
+
+
+.header-container {
+    position: fixed;
+    top: 16px;
+    z-index: 100;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header-tel {
+    position: absolute;
+    right: 38px;
+
+}
+
+.header-tel_icon {
+    width: 22px;
+    height: 22px;
+}
+
+
+
+.menu-burger {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn4::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn4:hover::before {
+    height: 380%;
+}
+
+.btn {
+    overflow: hidden;
+
+}
+
+.btn::before {
+    background: rgba(245, 208, 180, 0.8);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .header-container {
+        position: fixed;
+        top: 24px;
+        z-index: 100;
+        width: 768px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .header-nav,
+    .header-big {
+        display: flex;
+
+    }
+
+    .menu-burger,
+    .header-mob {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 24px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: calc(24 / 20);
+    }
+
+    .header-tel_icon {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .header-tel {
+        position: static;
+        top: 16px;
+
+    }
+
+    .header-logo_icon {
+        width: 72px;
+        height: 57px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header-container {
+        position: fixed;
+        top: 28px;
+        width: 1232px;
+    }
+
+    .header-logo {}
+
+    .nav-list {
+
+        gap: 48px;
+    }
+
+    .header-tel__icon {
+        position: static;
+
+        top: 16px;
+
+    }
+
 }
