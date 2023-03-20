@@ -1,11 +1,14 @@
 .footer-container {
     display: flex;
     flex-wrap: wrap;
+ column-gap: 44px;
+    row-gap: 32px;
     background-color: #000000;
+    padding-top:60px;
+    padding-bottom: 54px;
 }
 .footer-title {
     font-weight: 700;
-    margin-top: 32px;
     font-size: 18px; 
     line-height: 22px;
     margin-bottom: 18px;
@@ -18,13 +21,9 @@
     margin-bottom: 12px;
     color: #ffffff;
 }
-.footer-set1{
-    padding-left: 44px;
-}
 
 .open-time {
     font-weight: 700;
-    margin-top: 32px;
     font-size: 18px; 
     line-height: 22px;
     color: #ffffff;
@@ -38,7 +37,6 @@
 }
 .footer-contact {
     font-weight: 700;
-    margin-top: 32px;
     font-size: 18px;
     line-height: 22px;
     color: #ffffff;
@@ -57,17 +55,7 @@
     margin-top: 12px;
     color: #ffffff;
 }
-.footer-str{
-}
 
-.footer-set2{
-    margin-right: 32px;
-}
-
-.footer-icon-list {
-    margin-top: 32px;
-    display: flex;
-}
 .footer-icon-item{
     margin-right: 23.33px;
 }
