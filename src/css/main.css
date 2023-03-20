@@ -16,6 +16,7 @@
 @import url('./components/container.css');
 @import url('./components/buttons.css');
 @import url('./components/style-line.css');
+@import url('./components/stoc_stail_modal.css');
 
 /* layout */
 @import url('./layout/header.css');

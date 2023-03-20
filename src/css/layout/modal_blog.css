@@ -1,32 +1,59 @@
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 41;
-    visibility: hidden;
+.modal-blog {
     opacity: 0;
-    pointer-events: none;
-}
-
-.backdrop.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-}
-
-.modal {
+    visibility: hidden;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 272px;
     height: 380px;
+
     background: #FFFFFF;
-    background-image: url(../../img/blog/popup-img_mob@1x.jpg);
+    background-image: url(../../img/modal-blog/popup-img_mob@1x.webp);
     background-repeat: no-repeat;
+    z-index: 30;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .modal-blog {
+        background-image: url(../../img/modal-blog/popup-img_mob@2x.webp);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal-blog {
+        background-image: url(../../img/modal-blog/popup-img_tab@1x.webp);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .modal-blog {
+            background-image: url(../../img/modal-blog/popup-img_tab@2x.webp);
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .modal-blog {
+        background-image: url(../../img/modal-blog/popup-img_desk@1x.webp);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .modal-blog {
+            background-image: url(../../img/modal-blog/popup-img_desk@2x.webp);
+        }
+    }
+}
+
+.modal-blog.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: initial;
 }
 
 .modal-btn {
@@ -50,49 +77,6 @@
     stroke: #000000;
 }
 
-.modal3.active {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: initial;
-}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .modal {
-        background-image: url(../../img/blog/popup-img_mob@2x.jpg);
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .modal {
-        background-image: url(../../img/blog/popup-img_tab@1x.jpg);
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .modal {
-            background-image: url(../../img/blog/popup-img_tab@2x.jpg);
-        }
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .modal {
-        background-image: url(../../img/blog/popup-img_desk@1x.jpg);
-    }
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .modal {
-            background-image: url(../../img/blog/popup-img_desk@2x.jpg);
-        }
-    }
-}
-
-
 .title-mod {
     font-weight: 600;
     font-size: 19px;
@@ -108,9 +92,6 @@
     text-align: center;
     margin: 14px auto 18px;
 }
-
-
-
 
 .modal-form {
     display: flex;
@@ -157,12 +138,14 @@
     border: 1px solid rgba(17, 17, 17, 0.7);
 }
 
+
 .modal-form-input:not(:placeholder-shown):required:valid {
     border-color: #3CBC81;
-}
+    }
 
 .modal-form-input:not(:placeholder-shown):required:invalid {
     border-color: #E74A3B;
+
 }
 
 .contact-form-btn {
@@ -186,13 +169,12 @@
     background-color: #FA6F54;
 }
 
-@media screen and (min-width:768px) {
-    .modal {
+@media screen and (min-width: 768px) {
+    .modal_blog {
         background-repeat: no-repeat;
         width: 588px;
-        height: 644px;
+        
     }
-
     .modal-btn {
         top: 28px;
         right: 28px;
@@ -227,15 +209,15 @@
         padding: 14px 122px;
         font-size: 18px;
         line-height: calc(22 / 18);
-    }
+    }    
 }
 
-@media screen and (min-width:1200px) {
-    .modal {
+@media screen and (min-width: 1280px) {
+    .modal_blog {
         display: flex;
         background-repeat: no-repeat;
         width: 860px;
-        height: 528px;
+        height: 528px;   
     }
 
     .modal-cont {
@@ -245,18 +227,16 @@
         margin-left: 468px; */
         margin: 111px 40px 0px 468px;
     }
-
+    
     .text-mod {
         width: 336px;
         padding: 0px 8px;
         margin-left: 0;
     }
-
+    
     .contact-form-btn {
         /* height: 50px; */
         font-size: 18px;
         line-height: calc(22 / 18);
     }
-
-
 }
