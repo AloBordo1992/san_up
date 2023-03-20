@@ -7,6 +7,7 @@
     transform: translate(-50%, -50%);
     width: 272px;
     height: 380px;
+
     background: #FFFFFF;
     background-image: url(../../img/modal-blog/popup-img_mob@1x.webp);
     background-repeat: no-repeat;
@@ -172,7 +173,7 @@
     .modal_blog {
         background-repeat: no-repeat;
         width: 588px;
-        height: 644px; 
+        
     }
     .modal-btn {
         top: 28px;

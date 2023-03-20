@@ -1,32 +1,24 @@
 <div class="modal modal_blog" data-modal="3">
   <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+  <div class="background_mod_blog"></div>
+  <h3 class="title-mod">Follow to our newsletter</h3>
+  <p class="text-mod">
+        Be the first to get exclusive offers and the latest news on our product
+        directly in your box.
+  </p>
+  <form class="modal-form">
+    <label class="modal-form-label" for="user_email">Email</label>
+
+    <input
+      class="modal-form-input"
+      type="email"
+      id="user_email"
+      placeholder="Your email"
+      required
     />
-  </svg>
-  <div class="modal-cont">
-    <h2 class="title-mod">Follow to our newsletter</h2>
-    <p class="text-mod">
-      Be the first to get exclusive offers and the latest news on our product
-      directly in your box.
-    </p>
-    <form class="modal-form">
-      <label class="modal-form-label" for="user_email">Email</label>
-
-      <input
-        class="modal-form-input"
-        type="email"
-        id="user_email"
-        placeholder="Your email"
-        required
-      />
-
-      <button class="contact-form-btn btn" type="submit">Subscribe</button>
-    </form>
-  </div>
+    <button type="button" class="btn_modal_blog js-modal-close">Subscribe
+      <a href="#" class="js-modal-close " ></a>
+    </button> 
+  </form>
 </div>
