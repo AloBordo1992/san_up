@@ -9,26 +9,25 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <body>
-      <load src="partials/heder.html" />
-      <main>
-        <load src="partials/hero.html" />
-        <load src="partials/about.html" />
-        <load src="partials/store.html" />
-        <load src="partials/delivery.html" />
-        <load src="partials/blog.html" />
-      </main>
-      <load src="partials/footer.html" />
-    
-      <load src="partials/modal_blog.html" />
-      <load src="partials/modal_store.html" />
-      <div class="overlay js-overlay-modal"></div>
-      
-      <script type="module" src="./main.js"></script>
-      <script src="./js/modal.js"></script>
-      <script src="./js/menu.js"></script>
-      <script src="./js/header-scroll.js"></script>
-      
-    </body>
+    <load src="partials/header.html" />
+    <main>
+      <load src="partials/hero.html" />
+      <load src="partials/about.html" />
+      <load src="partials/store.html" />
+      <load src="partials/delivery.html" />
+      <load src="partials/blog.html" />
+    </main>
+    <load src="partials/footer.html" />
+    <load src="partials/modal_blog.html" />
+    <load src="partials/modal_store.html" />
+
+    <script type="module" src="/main.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <div class="overlay js-overlay-modal"></div>
   </body>
 </html>
