@@ -1,7 +1,7 @@
 .footer-container {
     display: flex;
     flex-wrap: wrap;
- column-gap: 44px;
+    grid-template-columns: 44px;
     row-gap: 32px;
     background-color: #000000;
     padding-top:60px;
@@ -10,7 +10,7 @@
 .footer-title {
     font-weight: 700;
     font-size: 18px; 
-    line-height: 22px;
+    line-height: calc(22 /18);
     margin-bottom: 18px;
     color: #ffffff;
 }
@@ -72,67 +72,60 @@
     display: none;
 }
 
-@media screen and (min-width: 480px) {
-    /* .container {
-        min-width: 320px;
-    } */
-}
 
 @media screen and (min-width: 768px) {
-    /* .container{
-        max-width: 720px;
-    } */
+    .footer-set{
+        margin-right: 44px;
+    }
+    .footer-title{
+        font-size: 20px; 
+        line-height: calc(24 /20);
+    }
+    .footer-txt{
+        font-size: 16px; 
+        line-height: calc(19 /16);
+    }
     .footer-set1{
-        padding: 0;
+        margin-right: 44px;  
     }
     .footer-set2{
-        padding: 0;
+        margin-right: 64px;
     }
-    .footer-br{
+    .footer-br-email{
         display: none;
     }
     .footer-container{
-        column-gap: 44px;
+        
     }
     .footer-title{
-        margin-bottom: 18px;
-        font-size: 20px;
-        line-height: 24px;
+        
     }
     .footer-item{
-        font-size: 16px;
-        line-height: 19px;
+       
     }
     .open-time{
-        margin-bottom: 18px;
-        font-size: 20px;
-        line-height: 24px;
+        
     }
     .worked{
-        font-size: 16px;
-        line-height: 19px;
+       
     }
     .footer-contact{
-        margin-bottom: 18px;
-        font-size: 20px;
-        line-height: 24px;
+        
     }
     .contact-items{
-        font-size: 16px;
-        line-height: 19px;
+       
     }
     .footer-str{
-        font-size: 16px;
-        line-height: 19px;
+        
     }
     .footer-icon-list{
-        display: block;
+       
     }
     .footer-icon-item{
-        margin-bottom: 22.67px;
+       
     }
     .footer-logo{
-        display: none;
+       
     }
 }
 
