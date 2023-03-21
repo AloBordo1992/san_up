@@ -1,16 +1,11 @@
  .store {
-     padding-bottom: 100px;
+     padding-bottom: 60px;
  }
 
  .store-title {
      margin-bottom: 32px;
      display: flex;
      align-items: center;
-     font-weight: 700;
-     font-size: 24px;
-     line-height: 1.2;
-     margin-bottom: 32px;
-
  }
 
  .store-list {
@@ -18,6 +13,7 @@
      flex-wrap: wrap;
      gap: 16px;
      justify-content: center;
+     margin-bottom: 32px;
  }
 
  .store-iteam {
@@ -69,8 +65,11 @@
  }
 
  @media screen and (min-width: 768px) {
+    .store {
+        padding-bottom: 100px;
+    }
      .store-title {
-         font-weight: 700;
+        margin-bottom: 60px;
      }
 
      .store-label {
@@ -106,6 +105,7 @@
      .store-list {
          column-gap: 32px;
          row-gap: 40px;
+         margin-bottom: 60px;
      }
 
      .store-btn {
@@ -113,7 +113,10 @@
      }
  }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
+            .store-title {
+                margin-bottom: 80px;
+             }
             .store-label {
                  font-size: 36px;
                  line-height: 1.2;
@@ -126,10 +129,11 @@
              }
 
             .store-iteam {
-                 width: calc((100% - 32px) / 2);
+                 width: calc((100% - 80px) / 2);
              }
 
             .store-list {
+                column-gap: 80px;
                  row-gap: 64px;
              }
          }
