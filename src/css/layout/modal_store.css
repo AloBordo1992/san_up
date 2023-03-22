@@ -1,7 +1,13 @@
-.modal_store{
+.modal-store{
     width: 272px;
-    height: 357px;  
+    height: 357px;
+    padding: 28px 16px;
 }
+.modal__cross {
+    width: 18px;
+    height: 18px;
+}
+
 .store-modal-title {
     font-weight: 600;
     font-size: 32px;
@@ -11,20 +17,147 @@
 }
 
 .store-modal-title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: calc(39 / 32);
-    color: #5C5C5C;
+    display: block;
+    
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    
+    margin-bottom: 14px;
+    
+    color: #000000;
+}
 
+.store-modal-desc {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    
+    color: #5C5C5C;
+    
     margin-bottom: 18px;
 }
 
+.store-modal-form-label {
+    display: block;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: calc(12 / 10);
+    
+    color: #5C5C5C;
+    
+    margin-bottom: 8px;
+}
+
+.store-modal-form-group {
+    margin-bottom: 14px;
+}
+
+.store-modal-form-field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    outline: 2px solid transparent;
+    outline-offset: -1px;
+}
+
+.store-modal-form-field::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.store-modal-form-field:focus,
+.store-modal-form-field:focus-visible {
+    border: 1px solid rgba(17, 17, 17, 0.7);
+}
+
+.store-modal-form-field:not(:placeholder-shown):required:valid {
+    border-color: #3CBC81;
+}
+
+.store-modal-form-field:not(:placeholder-shown):required:invalid {
+    border-color: #E74A3B;
+}
+
+.store-modal-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    margin-top: 38px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #FFFFFF;
+    background: #E86F54;
+    width: 100%;
+    height: 37px;
+
+    border: none;
+    border-radius: 8px;
+}
+
 @media screen and (min-width: 768px) {
-    .modal_store {
+    .modal-store {
         width: 480px;
         height: 511px;    
+        padding: 48px 32px;
+    }
+
+    .modal__cross {
+        width: 24px;
+        height: 24px;
+    }
+
+    .store-modal-title {
+        font-size: 32px;
+        line-height: calc(39 / 32);
+
+        margin-bottom: 24px;
     }
     
+    .store-modal-desc {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(20 /16);
+        
+        margin-bottom: 32px;
+    }
+
+    .store-modal-form-label {
+        font-size: 14px;
+        line-height: calc(17 / 14);
+    }
+
+    .store-modal-form-group {
+        margin-bottom: 24px;
+    }
+
+    .store-modal-form-field {
+        height: 49px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .store-modal-form-field::placeholder {
+        font-size: 14px;
+        line-height: calc(17 / 14);
+    }
+
+    .store-modal-btn {
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        
+        height: 50px;
+    }
   }
   @media screen and (min-width: 1280px) {
     
@@ -33,18 +166,95 @@
 /* ----------------------------------------------- */
 
 
-  .modal_store_two{
+.modal-store-two{
     width: 272px;
-    height: 357px; 
+    height: 357px;
+    padding: 44px 16px 32px 16px;
+}
+
+.background-mob-store {
+    display: flex;
+    justify-content: center;
+}
+
+.background-mob-store-svg {
+    width: 188px;
+    height: 142px;
+    background-image: url(../../img/modal_store.img/flowers.svg);
+    background-repeat: no-repeat;
+}
+
+.store-modal-thank-title {
+    display: block;
+    text-align: center;
+    
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    margin-bottom: 14px;
+}
+
+.store-modal-thank-desc {
+    text-align: center;
+    
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    margin-bottom: 16px;
+}
+
+.modal-store-two-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    
+    color: #FFFFFF;
+    background: #E86F54;
+    width: 100%;
+    height: 37px;
+    margin-bottom: 32px;
+    border-radius: 8px;
 }
 
 @media screen and (min-width: 768px) {
-    .modal_store_two {
+    .modal-store-two {
         width: 480px;
-        height: 505px;  
+        height: 505px;
+        padding: 54px 16px 32px 16px;
+    }
+
+    .background-mob-store-svg {
+        width: 266px;
+        height: 202px;
+        background-image: url(../../img/modal_store.img/Plants_tab@1x.svg);
+    }
+
+    .store-modal-thank-title {
+        font-size: 32px;
+        line-height: calc(39 / 32);
+        margin-bottom: 16px;
     }
     
+    .store-modal-thank-desc {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 34px;
+    }
+
+    .modal-store-two-btn {
+        font-size: 18px;
+        line-height: calc(22 /18);
+        margin-bottom: 54px;
+        height: 50px;
+    }
   }
   @media screen and (min-width: 1280px) {
     
   }
+
+
+
+
+  .modal {}
+
+  .store-modal-img {}
