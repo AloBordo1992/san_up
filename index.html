@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     
     <script type="module" crossorigin src="/san_up/assets/index-11c9e10b.js"></script>
-    <link rel="stylesheet" href="/san_up/assets/index-50613281.css">
+    <link rel="stylesheet" href="/san_up/assets/index-4e646b4f.css">
   </head>
   <body>
     <body>
@@ -481,14 +481,22 @@
   </div>
 </div>
 
-      <div class="modal modal_store" data-modal="1">
+      <div class="modal modal-store" data-modal="1">
   <!--   Svg иконка для закрытия окна  -->
-  <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+    />
+  </svg>
   <strong class="store-modal-title">Contact us</strong>
   <p class="store-modal-desc">
-    If you have any additional questions or you want to clarify something
-    before you make an order please fill in your contact details. We will call
-    you back.
+    If you have any additional questions or you want to clarify something before
+    you make an order please fill in your contact details. We will call you
+    back.
   </p>
   <form class="store-modal-form" name="store_modal_form">
     <!-- Name Field -->
@@ -505,45 +513,47 @@
         title="Username must be two words separated by space."
       />
     </div>
-     <!-- Email Field -->
+    <!-- Email Field -->
     <label class="store-modal-form-label" for="store_email">Email</label>
     <div class="store-modal-form-group">
-       <input
-         class="store-modal-form-field"
-         type="email"
-         name="store_email"
-         id="store_email"
-         placeholder="Your email"
-         required
-       />
+      <input
+        class="store-modal-form-field"
+        type="email"
+        name="store_email"
+        id="store_email"
+        placeholder="Your email"
+        required
+      />
     </div>
-    <button type="button" class="stail_btn">
+    <button type="button" class="store-modal-btn stail_btn">
       <a href="#" class="js-modal-close js-open-modal" data-modal="2">Send</a>
-    </button> 
+    </button>
   </form>
- 
 </div>
-<div class="modal modal_store_two" data-modal="2">
+<div class="modal modal-store-two" data-modal="2">
   <!--   Svg иконка для закрытия окна  -->
-    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-    <img
-      class="store-modal-img"
-      src="/san_up/assets/modal_store_flowers-e63c5494.png"
-      srcset="/san_up/assets/modal_store_flowers-e63c5494.png 188w, /san_up/assets/modal_store_flowers_266-5980e915.png 266w, /san_up/assets/modal_store_flowers_376-289264cf.png 376w, /san_up/assets/modal_store_flowers_532-3ebac327.png 532w"
-      sizes="(min-width: 1280px) 266px, (min-width: 768px) 266px, (min-width: 480px) 188px, 100vw"
-      alt="Flowers"
-      width="188"
-      height="142"
+  <svg
+    class="modal__cross js-modal-close"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
     />
-    <strong class="store-modal-thank-title">Thank you!</strong>
-    <p class="store-modal-thank-desc">
-      We have received your contact details and will reach you soon.
-    </p>
-    <button type="button" class="stail_btn">
-      <a href="#" class="js-modal-close " data-modal="2">Continue</a>
-    </button> 
-</div>  
-
+  </svg>
+  <div class="background-mob-store">
+    <svg class="background-mob-store-svg" width="188" height="142">
+      <use href="../img/modal_store.img/flowers.svg"></use>
+    </svg>
+  </div>
+  <strong class="store-modal-thank-title">Thank you!</strong>
+  <p class="store-modal-thank-desc">
+    We have received your contact details and will reach you soon.
+  </p>
+  <button type="button" class="modal-store-two-btn stail_btn">
+    <a href="#" class="js-modal-close" data-modal="2">Continue</a>
+  </button>
+</div>
 
       <div class="overlay js-overlay-modal"></div>
       
